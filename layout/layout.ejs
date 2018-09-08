@@ -4,21 +4,21 @@
   <%- partial('_partial/head') %>
 
   <body>
-  	<div class="container-fluid navbar-container m-sm-5">
+  	<div class="container my-4">
       <!-- Header -->
       <%- partial('_partial/header') %>
 
-  		<div class="row">
-  			<%- body %>
-      </div>
+  		<%- body %>
+
       <% if (page.total > 1) { %>
     <nav class="page-nav">
         <%- paginator({prev_text: '<', next_text: '>'}) %>
     </nav>
 <% } %>
-  	</div>
+      <%- partial('_partial/footer') %>
 
-    <!-- After footer scripts -->
-    <%- partial('_partial/footer') %>
+    </div>
+
+    <%- partial('_partial/foot') %>
   </body>
 </html>
