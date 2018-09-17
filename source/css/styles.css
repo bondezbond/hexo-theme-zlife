@@ -2,6 +2,8 @@ body {
   font-family: 'Crimson Text', serif;
   font-size: 1.25rem;
   color: #333;
+  background: url('../images/bg.jpg') no-repeat left center fixed;
+  background-size: contain;
 }
 
 a, a:visited, a:active, a:focus {
